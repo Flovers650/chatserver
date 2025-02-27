@@ -180,7 +180,6 @@ int main(int argc, char **argv)
 // 处理注册的相应逻辑
 void doRegResponse(json &responsejs)
 {
-    json responsejs = json::parse(buffer);
     if(responsejs["errno"] != 0) // 注册失败
     {
         cerr << "name is already exist, register error!" << endl;
